@@ -1,0 +1,32 @@
+.header {
+  @include flexCenter;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140rem;
+    border-bottom: 1px solid $color5;
+  }
+  &__contact {
+    display: flex;
+  }
+  &__a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: $color2;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+    &:hover {
+      color: $color7;
+    }
+  }
+  &__social {
+    @include flexCenter;
+  }
+  &__p {
+    margin-left: 1rem;
+  }
+}

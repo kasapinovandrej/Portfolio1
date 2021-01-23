@@ -1,0 +1,6 @@
+.hero {
+  @include flexCenter;
+  &__wrap {
+    width: 140rem;
+  }
+}

@@ -1,11 +1,20 @@
-$color1: #0a043c;
-$color2: #03506f;
-$color3: #bbbbbb;
-$color4: #ffe3d8;
-$color5: #f4f4f2;
-$color6: #e8e8e8;
-$color7: #bbbfca;
-$color8: #495464;
+// $color1: #0a043c;
+// $color2: #03506f;
+// $color3: #bbbbbb;
+// $color4: #ffe3d8;
+// $color5: #f4f4f2;
+// $color6: #e8e8e8;
+// $color7: #bbbfca;
+// $color8: #495464;
+
+$color1: #383874;
+$color2: #e13c04;
+$color3: #ff6225;
+$color4: #16989a;
+$color5: #20c4c6;
+$color6: #87bfbc;
+$color7: #eaf8f8;
+$color8: #ffffff;
 
 //bp
 $bp--1400: 87.5em;
@@ -31,7 +40,7 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   font-size: 1.2rem;
-  color: $color2;
+  color: $color1;
 }
 
 @mixin flexCenter {

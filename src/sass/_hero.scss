@@ -68,5 +68,8 @@
       color: $color3;
       background: $color8;
     }
+    &:active {
+      transform: translateY(5px);
+    }
   }
 }

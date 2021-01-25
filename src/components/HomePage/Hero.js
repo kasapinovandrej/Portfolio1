@@ -3,7 +3,7 @@ import HeroImage from '../../assets/img/Hero.png';
 
 const Hero = () => {
     return (
-        <div className="hero">
+        <section className="hero">
             <div className="hero__wrap">
                 <div className="hero__text">
                     <h2 className="hero__h2">Hello,</h2>
@@ -17,7 +17,7 @@ const Hero = () => {
                     <img src={HeroImage} className="hero__img" alt="Hero" />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

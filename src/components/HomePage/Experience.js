@@ -14,7 +14,7 @@ class Experience extends Component {
     render() {
         const workClicked = work[this.state.activeBtn - 1];
         return (
-            <div className="exp">
+            <section className="exp">
                 <div className="exp__wrap">
                     <h2 className="about__h2">Previous<span className="about__span">Experience</span></h2>
                     <div className="exp__box">
@@ -36,7 +36,7 @@ class Experience extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

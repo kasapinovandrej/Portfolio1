@@ -16,7 +16,7 @@ function App() {
         <Route path='/portfolio' component={Portfolio} />
         <Route path='/' exact component={Home} />
       </Switch>
-      
+
       <footer>footer</footer>
     </div >
   );

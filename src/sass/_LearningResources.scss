@@ -1,0 +1,55 @@
+.learn {
+  @include flexCenter;
+  &__wrap {
+    width: 140rem;
+  }
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__h4 {
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: center;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+  &__innerbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25rem;
+    height: 30rem;
+    margin: 1rem 2rem;
+    padding: 0.5rem;
+    // background: linear-gradient(to right bottom, $color7, $color5);
+    border-radius: 6px;
+    background: $color5;
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__img {
+    width: 24rem;
+    margin-bottom: 1rem;
+  }
+  &__p {
+    margin-top: 1rem;
+  }
+  &__h5 {
+    font-size: 1.3rem;
+    color: $color1;
+  }
+  &__a {
+    text-decoration: none;
+    color: $color8;
+  }
+}

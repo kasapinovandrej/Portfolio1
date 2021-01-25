@@ -1,11 +1,15 @@
 import React from 'react';
-import Hero from '../../components/HomePage/Hero'
+import AboutMe from '../../components/HomePage/AboutMe';
+import Hero from '../../components/HomePage/Hero';
+import Experience from '../../components/HomePage/Experience';
+
 
 const Home = () => {
     return (
         <>
             <Hero />
-            <div>asdasdasd</div>
+            <AboutMe />
+            <Experience />
         </>
     )
 }

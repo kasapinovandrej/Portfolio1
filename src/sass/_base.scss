@@ -17,6 +17,7 @@ $color7: #eaf8f8;
 $color8: #ffffff;
 
 //bp
+$bp--2560: 160em;
 $bp--1400: 87.5em;
 $bp--1200: 74.98em;
 $bp--992: 61.98em;
@@ -54,5 +55,6 @@ body {
 }
 .active {
   border-radius: 25px;
-  background: $color2;
+  background: $color4;
+  color: $color8;
 }

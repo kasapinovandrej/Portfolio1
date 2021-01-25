@@ -1,0 +1,79 @@
+.exp {
+  @include flexCenter;
+  &__wrap {
+    width: 140rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__box {
+    width: 80%;
+    margin: 3rem 0;
+    background: $color7;
+  }
+  &__buttonbox {
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    width: 22rem;
+    height: 4rem;
+    outline: none;
+    background: $color8;
+    border: 2px solid $color5;
+    color: $color4;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      border-color: $color3;
+      color: $color3;
+      background: $color8;
+    }
+  }
+  &__btnactive {
+    border-color: $color4;
+    color: $color8;
+    background: $color5;
+    transform: translateY(-5px);
+    &:hover {
+      border-color: $color4;
+      color: $color8;
+      background: $color5;
+    }
+  }
+  &__innerbox {
+    display: flex;
+  }
+  &__leftside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__rightside {
+    width: 70%;
+  }
+  &__h3 {
+    font-size: 2rem;
+  }
+  &__p {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+  &__img {
+    height: 20rem;
+  }
+  &__link {
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: $color1;
+    &:hover {
+      color: $color3;
+    }
+  }
+}

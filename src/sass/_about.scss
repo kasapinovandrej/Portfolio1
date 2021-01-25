@@ -1,0 +1,56 @@
+.about {
+  @include flexCenter;
+  background: $color7;
+  &__wrap {
+    width: 140rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__h2 {
+    font-size: 4rem;
+    font-weight: 200;
+    margin: 2rem;
+  }
+  &__h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  &__span {
+    color: $color8;
+    background: $color3;
+    margin-left: 1rem;
+    padding: 0.5rem 0.2rem;
+    position: relative;
+  }
+  &__p {
+    font-size: 2rem;
+    text-align: left;
+    width: 70%;
+    &:last-child {
+      margin-bottom: 2rem;
+    }
+  }
+  &__quote {
+    font-size: 2rem;
+    position: relative;
+    padding: 2rem;
+    &::before {
+      content: ",,";
+      top: -2.5rem;
+      left: 0rem;
+      position: absolute;
+      font-size: 4rem;
+      color: $color3;
+    }
+    &::after {
+      content: ",,";
+      bottom: 0rem;
+      right: 0rem;
+      position: absolute;
+      font-size: 4rem;
+      color: $color3;
+    }
+  }
+}

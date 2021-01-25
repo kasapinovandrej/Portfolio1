@@ -28,7 +28,7 @@ const Navigation = () => {
                 <div className="nav__buttondiv">
                     <motion.button className="nav__button" onClick={navButtonHandler}
                         transition={{ duration: .2 }}
-                        whileHover={{ scale: 1.1, rotate: 180 }}
+                        whileHover={{ scale: 1.1, rotate: 180}}
                         whileTap={{ scale: 0.9 }}
                     >{toggleButton ? <RiCloseLine className="nav__buttonicon" /> : <RiMenuLine className="nav__buttonicon" />}</motion.button>
                     <AnimatePresence exitBeforeEnter>

@@ -2,5 +2,71 @@
   @include flexCenter;
   &__wrap {
     width: 140rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem 0;
+  }
+  // &__text {
+  // }
+  // &__imgbox {
+  // }
+  &__img {
+    width: 50rem;
+  }
+  &__h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 7rem;
+    font-weight: 200;
+    margin: 2rem 0;
+    color: $color8;
+    &::after {
+      content: "";
+      position: absolute;
+      background: linear-gradient(to right bottom, $color5, $color6);
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      transform: skewX(-15deg);
+    }
+  }
+  &__h2 {
+    font-size: 4rem;
+  }
+  &__h3 {
+    font-size: 3rem;
+  }
+  &__p {
+    width: 50%;
+    font-size: 2rem;
+  }
+  &__button {
+    width: 14rem;
+    height: 4rem;
+    margin: 2rem 0.5rem;
+    outline: none;
+    background: none;
+    border: 2px solid #e8e8e8;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &--work {
+      border-color: $color5;
+      color: $color8;
+      background: $color5;
+    }
+    &--contact {
+      border-color: $color5;
+      color: $color1;
+    }
+    &:hover {
+      border-color: $color3;
+      color: $color3;
+      background: $color8;
+    }
   }
 }

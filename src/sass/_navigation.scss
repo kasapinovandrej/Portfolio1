@@ -5,19 +5,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid $color5;
+    border-bottom: 1px solid $color6;
   }
   &__logo {
     width: 7rem;
   }
 
   &__buttondiv {
+    position: fixed;
     @include flexCenter;
-    position: sticky;
     width: 10rem;
+    margin-left: 131rem;
+    @media only screen and (max-width: $bp--1400) {
+      margin-left: 0;
+      right: 0;
+    }
   }
   &__button {
-    position: relative;
     @include flexCenter;
     width: 4rem;
     height: 4rem;
@@ -25,12 +29,19 @@
     border-color: $color1;
     background: $color8;
     outline: none;
+    border: 2px solid $color1;
     cursor: pointer;
     z-index: 2;
+    &:hover {
+      border-color: $color2;
+    }
   }
   &__buttonicon {
     font-size: 2.5rem;
-    color: $color2;
+    color: $color1;
+    &:hover {
+      color: $color2;
+    }
   }
   &__modal {
     position: absolute;
@@ -40,7 +51,7 @@
     height: 100vh;
   }
   &__modalbackground {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     background: $color7;
@@ -52,14 +63,15 @@
     list-style: none;
   }
   &__linkbox {
+    color: $color5;
   }
   &__link {
     display: inline-block;
     text-decoration: none;
     font-size: 4rem;
-    color: $color5;
     width: 100%;
     padding: 0 1rem;
     margin: 2rem 0;
+    text-align: center;
   }
 }

@@ -5,21 +5,23 @@ import Coca from '../../assets/img/testemonies/CocaPreporuka.JPG';
 import Nelt from '../../assets/img/testemonies/NeltPreporuka.JPG';
 import { IoEnterOutline } from 'react-icons/io5';
 import Modal from '../Modal';
+import { AnimatePresence } from 'framer-motion';
 
 const Testimonies = () => {
     const [modal, setModal] = useState(false)
-    console.log(modal)
     const [image, setImage] = useState(null)
-    console.log(image)
 
     const openModal = (e) => {
-        console.log(e)
-        setModal(true)
+        setModal(true);
         if (e === 'nelt') {
-            setImage(Nelt)
+            setImage(Nelt);
         } else if (e === 'coca') {
-            setImage(Coca)
+            setImage(Coca);
         }
+    }
+    const closeModal = () => {
+        setModal(false);
+        setImage(null);
     }
     return (
         <section className="test">
@@ -37,7 +39,7 @@ const Testimonies = () => {
                     </div>
                     <div className="test__sef">
                         <img src={Braca} alt="Bratislav Janković" className="test__img" />
-                        <p className="test__p">He showed high motivation and desire to work and achieving company goals, and he managed to do tasks better than colleagues who have more work experience. He had an excellent business relationship with clients...</p>
+                        <p className="test__p">He had an excellent business relationship with clients. Showed high motivation and desire to work and achieving company goals, and managed to do tasks better than some colleagues who have more work experience...</p>
                         <h3 className="test__h3">Bratislav Janković</h3>
                         <h4 className="test__h4">Sales supervisor, Coca-Cola HBC</h4>
                         <button className="test__btn"
@@ -46,8 +48,9 @@ const Testimonies = () => {
                     </div>
                 </div>
             </div>
-            {modal ? <Modal image={image} /> : null}
-
+            <AnimatePresence >
+                {modal ? <Modal image={image} closeModal={closeModal} /> : null}
+            </AnimatePresence>
         </section>
     )
 }

@@ -9,6 +9,7 @@
   }
   &__box {
     display: flex;
+    margin-bottom: 5rem;
   }
   &__sef {
     display: flex;
@@ -44,10 +45,10 @@
       color: $color3;
     }
   }
-//   &__h3 {
-//   }
-//   &__h4 {
-//   }
+  //   &__h3 {
+  //   }
+  //   &__h4 {
+  //   }
   &__btn {
     @include flexCenter;
     color: $color1;
@@ -68,6 +69,6 @@
       transform: translateY(5px);
     }
   }
-//   &__icon {
-//   }
+  //   &__icon {
+  //   }
 }

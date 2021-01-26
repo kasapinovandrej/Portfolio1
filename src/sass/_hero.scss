@@ -7,10 +7,6 @@
     align-items: center;
     margin: 3rem 0;
   }
-  // &__text {
-  // }
-  // &__imgbox {
-  // }
   &__img {
     width: 50rem;
   }
@@ -24,7 +20,11 @@
     &::after {
       content: "";
       position: absolute;
-      background: linear-gradient(to right bottom, $color5, $color6);
+      background: linear-gradient(
+        to right bottom,
+        $color5,
+        rgba(0, 255, 241, 1)
+      );
       left: 0;
       bottom: 0;
       width: 100%;

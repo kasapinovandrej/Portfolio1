@@ -5,6 +5,7 @@ import Portfolio from './Pages/Portfolio/Portfolio';
 import Contact from './Pages/Contact.js/Contact';
 import { Route, Switch } from 'react-router-dom';
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,8 +17,7 @@ function App() {
         <Route path='/portfolio' component={Portfolio} />
         <Route path='/' exact component={Home} />
       </Switch>
-
-      <footer>footer</footer>
+      <Footer />
     </div >
   );
 }

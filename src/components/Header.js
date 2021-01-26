@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImInstagram, ImLinkedin, ImFacebook2, ImPhone } from 'react-icons/im';
+import { ImInstagram, ImLinkedin, ImFacebook2, ImPhone, ImGithub } from 'react-icons/im';
 import { FaEnvelope } from 'react-icons/fa'
 import { motion } from 'framer-motion';
 
@@ -15,6 +15,7 @@ const Header = () => {
                     <motion.a whileHover={{ scale: 1.1 }} className="header__a" href='https://www.facebook.com/andrej.kasapinov' target='_blank' rel="noreferrer"><ImFacebook2 /></motion.a>
                     <motion.a whileHover={{ scale: 1.1 }} className="header__a" href='https://www.instagram.com/andrej.kasapinov/' target='_blank' rel="noreferrer"><ImInstagram /></motion.a>
                     <motion.a whileHover={{ scale: 1.1 }} className="header__a" href='https://www.linkedin.com/in/andrej-kasapinov-19132427/' target='_blank' rel="noreferrer"><ImLinkedin /></motion.a>
+                    <motion.a whileHover={{ scale: 1.1 }} className="header__a" href='https://github.com/kasapinovandrej' target='_blank' rel="noreferrer"><ImGithub /></motion.a>
                 </div>
 
             </div>

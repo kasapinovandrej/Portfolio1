@@ -28,7 +28,7 @@ const Navigation = () => {
                 <div className="nav__buttondiv">
                     <motion.button className="nav__button" onClick={navButtonHandler}
                         transition={{ duration: .2 }}
-                        whileHover={{ scale: 1.1, rotate: 180}}
+                        whileHover={{ scale: 1.1, rotate: 180 }}
                         whileTap={{ scale: 0.9 }}
                     >{toggleButton ? <RiCloseLine className="nav__buttonicon" /> : <RiMenuLine className="nav__buttonicon" />}</motion.button>
                     <AnimatePresence exitBeforeEnter>
@@ -39,11 +39,14 @@ const Navigation = () => {
                                 transition={{ duration: .5, ease: 'easeInOut' }}
                                 exit={{ opacity: 0, y: '-100vh' }}>
                                 <div className="nav__modalbackground">
-                                    <ul className="nav__list">
+                                    <motion.ul className="nav__list"
+                                        initial={{ opacity: 0, y: '-100vh' }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ delay: .5, duration: .5 }}>
                                         <li onClick={closeModal}><NavLink className="nav__link" exact to='/'>Home</NavLink></li>
                                         <li onClick={closeModal}><NavLink className="nav__link" to='/portfolio'>Portfolio</NavLink></li>
                                         <li onClick={closeModal}><NavLink className="nav__link" to='/contact'>Contact</NavLink></li>
-                                    </ul>
+                                    </motion.ul>
                                 </div>
                             </motion.div>
                             : null}

@@ -54,7 +54,14 @@ body {
   display: none;
 }
 .active {
-  border-radius: 25px;
-  background: $color4;
-  color: $color8;
+  border-radius: 5px;
+  background: $color4 !important;
+  color: $color8 !important;
+  border: 2px solid $color8;
+  transition: all 0.5s !important;
+  &:hover {
+    background: $color8 !important;
+    color: $color4 !important;
+    border: 2px solid $color4;
+  }
 }

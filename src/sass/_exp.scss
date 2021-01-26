@@ -15,6 +15,7 @@
   &__buttonbox {
     display: flex;
     justify-content: center;
+    margin-bottom: 4rem;
   }
   &__btn {
     width: 22rem;
@@ -35,12 +36,16 @@
   &__btnactive {
     border-color: $color4;
     color: $color8;
-    background: $color5;
+    background: linear-gradient(to right bottom, $color5, rgba(0, 255, 241, 1));
     transform: translateY(-5px);
     &:hover {
       border-color: $color4;
       color: $color8;
-      background: $color5;
+      background: linear-gradient(
+        to right bottom,
+        $color5,
+        rgba(0, 255, 241, 1)
+      );
     }
   }
   &__innerbox {
@@ -52,6 +57,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
   }
   &__rightside {
     width: 70%;

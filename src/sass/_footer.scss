@@ -1,0 +1,28 @@
+.footer {
+  @include flexCenter;
+  background: linear-gradient(to right bottom, $color5, rgba(0, 255, 241, 1));
+  &__wrap {
+    width: 140rem;
+  }
+  &__wrap {
+    @include flexCenter;
+    flex-direction: column;
+  }
+  &__logo {
+    width: 10rem;
+    margin: 3rem;
+  }
+  &__a {
+    display: inline-block;
+    font-size: 3rem;
+    margin: 0 1rem;
+    color: $color8;
+    &:hover {
+      color: $color3;
+    }
+  }
+  &__rights {
+    margin: 2rem;
+    color: $color1;
+  }
+}

@@ -7,11 +7,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width: $bp--767) {
+      width: 90%;
+    }
   }
   &__h2 {
     font-size: 4rem;
     font-weight: 200;
     margin: 5rem 0;
+    @media only screen and (max-width: $bp--767) {
+      margin: 2rem 0;
+    }
   }
   &__h3 {
     font-size: 2.5rem;
@@ -23,6 +29,7 @@
     margin-left: 1rem;
     padding: 0.5rem 0.2rem;
     position: relative;
+    z-index: -1;
   }
   &__p {
     font-size: 2rem;
@@ -47,7 +54,6 @@
     &::after {
       content: ",,";
       bottom: 0rem;
-      right: 0rem;
       position: absolute;
       font-size: 4rem;
       color: $color3;

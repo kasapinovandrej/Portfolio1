@@ -1,0 +1,27 @@
+.port {
+  @include flexCenter;
+  &__wrap {
+    @include flexCenter;
+    width: 140rem;
+    position: relative;
+    height: 20rem;
+    border-bottom: 1px solid $color6;
+    z-index: -1;
+  }
+  &__h1 {
+    font-size: 5rem;
+    font-weight: 300;
+  }
+  &__image {
+    height: 20rem;
+    position: absolute;
+    &--left {
+      left: 0;
+      bottom: 0;
+    }
+    &--right {
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

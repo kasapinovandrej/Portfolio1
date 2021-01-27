@@ -42,7 +42,8 @@ const Navigation = () => {
                                     <motion.ul className="nav__list"
                                         initial={{ opacity: 0, y: '-100vh' }}
                                         animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: .5, duration: .5 }}>
+                                        // transition={{ delay: .5, duration: .5 }}
+                                        >
                                         <li onClick={closeModal}><NavLink className="nav__link" exact to='/'>Home</NavLink></li>
                                         <li onClick={closeModal}><NavLink className="nav__link" to='/portfolio'>Portfolio</NavLink></li>
                                         <li onClick={closeModal}><NavLink className="nav__link" to='/contact'>Contact</NavLink></li>

@@ -1,5 +1,7 @@
 .nav {
   @include flexCenter;
+  position: relative;
+  z-index: 1;
   &__wrap {
     width: 140rem;
     display: flex;
@@ -32,7 +34,7 @@
     outline: none;
     border: 2px solid $color1;
     cursor: pointer;
-    z-index: 2;
+    z-index: 3;
     &:hover {
       border-color: $color2;
     }
@@ -50,9 +52,10 @@
     top: -3rem;
     width: 100vw;
     height: 100vh;
+    z-index: 2;
     @media only screen and (max-width: $bp--576) {
-      width: 150vw;
-      height: 120vh;
+      width: 105vw;
+      height: 105vh;
     }
   }
   &__modalbackground {

@@ -1,10 +1,18 @@
-import React from 'react'
+import React from 'react';
+import ContactHero from '../../components/PagesHero';
+import ContactImage from '../../assets/img/PagesHeroImages/Contact.png';
+import ContactImage1 from '../../assets/img/PagesHeroImages/Contact1.png';
+import Form from '../../components/ContactPage/Form';
 
 const Contact = () => {
     return (
-        <div>
-            Contact
-        </div>
+        <>
+            <ContactHero
+                name="Contact"
+                imgLeft={ContactImage}
+                imgRight={ContactImage1} />
+            <Form />
+        </>
     )
 }
 

@@ -1,5 +1,6 @@
 .modal {
   position: fixed;
+  z-index: 2000000000000;
   @include flexCenter;
   width: 100%;
   height: 100%;
@@ -19,17 +20,10 @@
     @include flexCenter;
     position: relative;
     height: 80%;
-    @media only screen and (max-width: $bp--767) {
-      height: 100%;
-    }
   }
   &__img {
     height: 100%;
     cursor: zoom-in;
-    @media only screen and (max-width: 432px) {
-      height: auto;
-      width: 80%;
-    }
   }
   &__btn {
     position: absolute;
@@ -44,17 +38,13 @@
     outline: none;
     border: 2px solid $color1;
     cursor: pointer;
-    z-index: 2;
-    @media only screen and (max-width: $bp--576) {
-      right: 2rem;
-      top: 1rem;
+    @media only screen and (max-width: $bp--992) {
+      width: 5rem;
+      height: 5rem;
+      right: 15%;
+      top: 0;
     }
-    @media only screen and (max-width: 432px) {
-      right: 10rem;
-    }
-    @media only screen and (max-width: 400px) {
-      right: 5%;
-    }
+
     &:hover {
       border-color: $color2;
     }
@@ -63,6 +53,9 @@
       color: $color1;
       &:hover {
         color: $color2;
+      }
+      @media only screen and (max-width: $bp--992) {
+        font-size: 5rem;
       }
     }
   }

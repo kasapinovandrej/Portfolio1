@@ -7,7 +7,7 @@ class Experience extends Component {
         activeBtn: 1
     }
 
-    jobsHandlre = (e) => {
+    jobsHandler = (e) => {
         this.setState({ activeBtn: e })
     }
 
@@ -20,7 +20,7 @@ class Experience extends Component {
                     <div className="exp__box">
                         <div className="exp__buttonbox">
                             {work.map(btn => {
-                                return <button className={this.state.activeBtn === btn.id ? "exp__btn exp__btnactive" : "exp__btn"} key={btn.id} onClick={() => this.jobsHandlre(btn.id)}>{btn.name}</button>
+                                return <button className={this.state.activeBtn === btn.id ? "exp__btn exp__btnactive" : "exp__btn"} key={btn.id} onClick={() => this.jobsHandler(btn.id)}>{btn.name}</button>
                             })}
                         </div>
                         <div className="exp__innerbox">

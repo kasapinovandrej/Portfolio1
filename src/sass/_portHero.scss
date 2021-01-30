@@ -7,6 +7,10 @@
     height: 20rem;
     border-bottom: 1px solid $color6;
     //z-index: -1;
+    @media only screen and (max-width: $bp--576) {
+      background: $color7;
+      height: 15rem;
+    }
   }
   &__h1 {
     font-size: 5rem;
@@ -15,6 +19,9 @@
   &__image {
     height: 20rem;
     position: absolute;
+    @media only screen and (max-width: $bp--576) {
+      display: none;
+    }
     &--left {
       left: 0;
       bottom: 0;

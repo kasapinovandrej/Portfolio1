@@ -1,8 +1,10 @@
 import Html from '../assets/img/LearningResources/html.JPG';
 import Css from '../assets/img/LearningResources/css.JPG';
 import Js from '../assets/img/LearningResources/js.JPG';
+import Js2 from '../assets/img/LearningResources/js2.jpg';
 import React from '../assets/img/LearningResources/React.JPG';
-export const learn = [
+
+const learn = [
     {
         img: Html,
         id: 1,
@@ -28,8 +30,16 @@ export const learn = [
         link: 'https://www.udemy.com/course/the-complete-javascript-course/'
     },
     {
-        img: React,
+        img: Js2,
         id: 4,
+        name: 'JavaScript: Understanding the Weird Parts',
+        description: 'An advanced JavaScript course for everyone! Scope, closures, prototypes, \'this\', build your own framework, and more.',
+        tutor: 'Anthony Alicea',
+        link: 'https://www.udemy.com/course/understand-javascript/'
+    },
+    {
+        img: React,
+        id: 5,
         name: 'React - The Complete Guide (incl Hooks, React Router, Redux)',
         description: 'Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!',
         tutor: 'Maximilian Schwarzmüller',
@@ -37,3 +47,5 @@ export const learn = [
     },
 
 ]
+
+export default learn;

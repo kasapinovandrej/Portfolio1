@@ -10,14 +10,14 @@ $color8: #ffffff;
 $color9: #b27e59c9;
 
 //bp
-$bp--1920: 120em;
-$bp--1440: 90em;
-$bp--1200: 74.98em;
-$bp--992: 61.98em;
-$bp--767: 47.98em;
-$bp--576: 35.98em;
-$bp--361: 22.98em;
-// $bp--230: 14.37em;
+$bp--1920: 120.1em;
+$bp--1440: 90.1em;
+$bp--1200: 75.1em;
+$bp--992: 62.1em;
+$bp--767: 48.1em;
+$bp--576: 36.1em;
+$bp--361: 22.5em;
+$bp--320: 20.1em;
 // @media only screen and (max-width: $bp--1200) {}
 
 * {
@@ -29,7 +29,7 @@ $bp--361: 22.98em;
 html {
   font-size: 62.5%;
   @media only screen and (min-width: $bp--1920) {
-    font-size: 70%;
+    font-size: 65%;
   }
   @media only screen and (max-width: $bp--1440) {
     font-size: 60%;

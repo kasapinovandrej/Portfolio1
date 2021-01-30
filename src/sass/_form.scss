@@ -1,0 +1,158 @@
+.form {
+  @include flexCenter;
+  &__wrap {
+    width: 140rem;
+    @include flexCenter;
+    flex-direction: column;
+    margin: 5rem;
+  }
+  &__box {
+    position: relative;
+    background: $color7;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 40rem;
+    width: 50rem;
+    @media only screen and (max-width: 354px) {
+      width: 40rem;
+      left: -5rem;
+    }
+  }
+  &__boxright {
+    height: 100%;
+    width: 80%;
+    @media only screen and (max-width: 354px) {
+      width: 100%;
+    }
+  }
+  &__real {
+    margin-left: 5rem;
+    //background: crimson;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__img {
+    position: absolute;
+    left: -20rem;
+    width: 30rem;
+    // height: 30rem;
+    @media only screen and (max-width: $bp--576) {
+      width: 20rem;
+      left: -7rem;
+    }
+    @media only screen and (max-width: 354px) {
+      width: 16rem;
+      left: 30rem;
+      top: 0;
+    }
+  }
+  &__label {
+    width: 60%;
+    text-align: left;
+    font-size: 2rem;
+    color: $color3;
+  }
+  &__input {
+    width: 60%;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    height: 3rem;
+    border-radius: 5rem;
+    background: rgba(204, 204, 204, 0.397);
+    padding-left: 3rem;
+    color: $color4;
+    @media only screen and (max-width: $bp--992) {
+      font-size: 1.2rem;
+    }
+    &::placeholder {
+      color: $color3;
+
+      @media only screen and (max-width: $bp--992) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &__text {
+    width: 80%;
+    height: 40%;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    background: rgba(204, 204, 204, 0.397);
+    font-family: inherit;
+    padding: 2rem 3rem;
+    color: $color4;
+    @media only screen and (max-width: $bp--992) {
+      font-size: 1.2rem;
+    }
+    &::placeholder {
+      color: $color3;
+      @media only screen and (max-width: $bp--992) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &__button {
+    margin-top: 2rem;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background: $color5;
+    border: 1px solid $color8;
+    color: $color8;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    transition: all 0.5s;
+    @media only screen and (max-width: $bp--992) {
+      font-size: 2rem;
+    }
+    &:hover {
+      transform: scale(1.1);
+      color: $color3;
+      border: 1px solid $color3;
+      background: $color8;
+    }
+    &:active {
+      transform: translateY(3px);
+    }
+  }
+  &__modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    @include flexCenter;
+  }
+  &__backdrop {
+    @include flexCenter;
+    background: linear-gradient(to right bottom, $color5, rgba(0, 255, 241, 1));
+    height: 40%;
+    width: 55%;
+    border-radius: 3rem;
+  }
+  &__backdrop--red {
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 0, 0, 0.849),
+      rgba(255, 0, 0, 0.5)
+    );
+  }
+  &__h1 {
+    width: 80%;
+    color: $color8;
+    text-justify: newspaper;
+    font-size: 2rem;
+  }
+  &__p {
+    font-size: 2rem;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 5rem;
+  }
+}

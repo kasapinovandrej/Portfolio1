@@ -1,5 +1,5 @@
 import React from 'react';
-import { learn } from '../../Data/Learn';
+import learn from '../../Data/Learn';
 
 const LearningResources = () => {
     return (
@@ -12,7 +12,10 @@ const LearningResources = () => {
                 <div className="learn__box">
                     {learn.map(element => {
                         return <a key={element.id} href={element.link} className="learn__a" target="_blank" rel="noreferrer"><div key={element.id} className="learn__innerbox">
-                            <img className="learn__img" src={element.img} alt={element.description} />
+                            <div>
+                                <h3>Tutor: {element.tutor}</h3>
+                                <img className="learn__img" src={element.img} alt={element.description} />
+                            </div>
                             <div>
                                 <h5 className="learn__h5">{element.name}</h5>
                                 <p className="learn__p">{element.description}</p>

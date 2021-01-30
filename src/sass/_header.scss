@@ -8,8 +8,8 @@
     align-items: center;
     width: 140rem;
     border-bottom: 1px solid $color6;
-    @media only screen and (max-width: 286px) {
-      flex-direction: column;
+    @media only screen and (max-width: $bp--1200) {
+      justify-content: center;
     }
   }
   &__contact {
@@ -24,6 +24,11 @@
     color: $color8;
     font-size: 1.5rem;
     transition: all 0.5s;
+    @media only screen and (max-width: $bp--576) {
+      font-size: 3rem;
+      margin-right: 3rem;
+    }
+
     &:hover {
       color: $color3;
     }
@@ -33,5 +38,8 @@
   }
   &__p {
     margin-left: 1rem;
+    @media only screen and (max-width: $bp--576) {
+      display: none;
+    }
   }
 }

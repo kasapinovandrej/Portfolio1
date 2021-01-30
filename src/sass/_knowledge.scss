@@ -1,0 +1,23 @@
+.know {
+  @include flexCenter;
+  &__wrap {
+    width: 140rem;
+    @include flexCenter;
+    margin: 5rem 0;
+  }
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon {
+    font-size: 7rem;
+    margin: 2rem 0;
+    // color: #a0ddc95b;
+    color: #ff6325b2;
+    &:not(:first-child) {
+      margin-left: 2rem;
+    }
+  }
+}

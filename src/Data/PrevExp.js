@@ -17,7 +17,7 @@ export const work = [
         image: Nelt,
         name: 'Nelt Co',
         position: 'Pre-selling representative',
-        description: 'Liasing with clients and customer care, market research and observing of competition activity, boosting sales, collection...',
+        description: 'Liaising with clients and customer care, market research and observing of competition activity, boosting sales, collection...',
         web: 'https://www.nelt.com/'
     },
     {
@@ -33,7 +33,7 @@ export const work = [
         image: Coca,
         name: 'Coca-Cola HBC ',
         position: 'Market developer jolly',
-        description: 'Liasing with clients on site. Sale of beverages and boosting sales. Customer care. Marketing research and observing of competition activity.',
+        description: 'Liaising with clients on site. Sale of beverages and boosting sales. Customer care. Marketing research and observing of competition activity.',
         web: 'https://rs.coca-colahellenic.com/'
     },
 ]

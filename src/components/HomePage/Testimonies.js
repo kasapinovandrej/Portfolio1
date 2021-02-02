@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import Rasko from '../../assets/img/testemonies/Rasko.JPG';
-import Braca from '../../assets/img/testemonies/Braca1.jpg';
+//import Rasko from '../../assets/img/testemonies/Rasko.JPG';
+//import Braca from '../../assets/img/testemonies/Braca1.jpg';
+import Rasko from '../../assets/img/prevComp/nelt.png'
+import Braca from '../../assets/img/prevComp/coca.png'
 import Coca from '../../assets/img/testemonies/CocaPreporuka.JPG';
 import Nelt from '../../assets/img/testemonies/NeltPreporuka.JPG';
 import { IoEnterOutline } from 'react-icons/io5';
